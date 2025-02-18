@@ -1,0 +1,1 @@
+base_model = EfficientNetB[X](include_top=False, weights='imagenet', ...) 
