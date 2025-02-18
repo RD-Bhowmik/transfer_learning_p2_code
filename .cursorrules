@@ -1,0 +1,75 @@
+
+
+
+-Project Structure:
+transfer_learning_models-test2/
+│
+├── data/                              # Data directory
+│   ├── raw/                          # Raw unprocessed data
+│   │   ├── images/                   # Raw medical images
+│   │   └── metadata/                 # Clinical metadata files
+│   │
+│   ├── processed/                    # Processed data ready for training
+│   │   ├── train/                   # Training dataset
+│   │   ├── val/                     # Validation dataset
+│   │   └── test/                    # Test dataset
+│   │
+│   └── external/                     # External datasets or resources
+│
+├── src/                              # Source code
+│   ├── __init__.py
+│   ├── model.py                      # Core model architecture
+│   ├── data_processing.py            # Data processing utilities
+│   ├── metrics.py                    # Custom metrics and evaluation
+│   ├── config.py                     # Configuration settings
+│   ├── utils.py                      # Utility functions
+│   ├── advanced_visualization.py      # Advanced visualization tools
+│   └── training/                     # Training related modules
+│       ├── __init__.py
+│       ├── trainer.py                # Training loop implementation
+│       ├── callbacks.py              # Custom callbacks
+│       └── optimizers.py             # Custom optimizers
+│
+├── notebooks/                        # Jupyter notebooks
+│   ├── exploratory/                  # EDA notebooks
+│   ├── model_development/            # Model development notebooks
+│   └── evaluation/                   # Model evaluation notebooks
+│
+├── experiments/                      # Experiment tracking
+│   └── runs/                        # Individual experiment runs
+│       └── experiment_YYYYMMDD_HHMMSS/
+│           ├── checkpoints/          # Model checkpoints
+│           ├── logs/                 # Training logs
+│           ├── visualizations/       # Generated visualizations
+│           │   ├── B0/              # EfficientNet-B0 results
+│           │   ├── B3/              # EfficientNet-B3 results
+│           │   ├── B4/              # EfficientNet-B4 results
+│           │   └── metadata_analysis/# Metadata analysis results
+│           └── config.yaml           # Experiment configuration
+│
+├── tests/                           # Test files
+│   ├── __init__.py
+│   ├── test_model.py                # Model tests
+│   ├── test_data_processing.py      # Data processing tests
+│   └── test_metrics.py              # Metrics tests
+│
+├── configs/                         # Configuration files
+│   ├── model_config.yaml            # Model configuration
+│   ├── training_config.yaml         # Training configuration
+│   └── evaluation_config.yaml       # Evaluation configuration
+│
+├── docs/                           # Documentation
+│   ├── api/                        # API documentation
+│   ├── guides/                     # User guides
+│   └── architecture/               # Architecture documentation
+│
+├── scripts/                        # Utility scripts
+│   ├── setup.sh                    # Setup script
+│   ├── train.sh                    # Training script
+│   └── evaluate.sh                 # Evaluation script
+│
+├── requirements.txt                # Project dependencies
+├── setup.py                        # Package setup file
+├── README.md                       # Project documentation
+├── LICENSE                         # License file
+└── .gitignore                     # Git ignore file 
