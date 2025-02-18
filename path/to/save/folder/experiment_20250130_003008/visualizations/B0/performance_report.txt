@@ -1,0 +1,37 @@
+B0 Performance Report
+==================================================
+Model Architecture: model
+Input Shape: [(None, 224, 224, 3), (None, 25)]
+
+Training Metrics:
+- Final Training Accuracy: 0.9455
+- Final Validation Accuracy: 0.9254
+- Final Training Loss: 0.2205
+- Final Validation Loss: 0.3909
+
+Test Metrics:
+- loss: 0.3154
+- accuracy: 0.9259
+- specificity: 0.9158
+- precision: 0.9231
+
+Classification Report:
++--------------+-------------+----------+------------+-----------+
+|              |   precision |   recall |   f1-score |   support |
+|--------------+-------------+----------+------------+-----------|
+| Class 0      |        0.92 |     0.97 |       0.94 |     70    |
+| Class 1      |        0.97 |     0.91 |       0.94 |     65    |
+| accuracy     |        0.94 |     0.94 |       0.94 |      0.94 |
+| macro avg    |        0.94 |     0.94 |       0.94 |    135    |
+| weighted avg |        0.94 |     0.94 |       0.94 |    135    |
++--------------+-------------+----------+------------+-----------+
+
+Confusion Matrix:
+[[ 68   2]
+ [  6  59]]
+
+Probabilities Summary:
+Mean: 0.5154
+Std: 0.3869
+Min: 0.0077
+Max: 0.9992
