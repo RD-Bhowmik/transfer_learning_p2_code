@@ -1,0 +1,10 @@
+preprocessing:
+  target_size: [512, 512]
+  normalization: "tanh"
+  augmentation:
+    rotation: true
+    flip: true
+    jitter: 0.1
+  validation:
+    min_resolution: 512
+    max_intensity: 255.0 
